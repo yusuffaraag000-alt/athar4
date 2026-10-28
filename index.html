@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111">
+<title>أثر ATHAR — Wear Your Impact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-shade"></div>
+  <div class="nav">
+    <button class="icon-button mobile-menu" id="menuButton" aria-label="فتح القائمة">☰</button>
+    <a class="brand" href="#home" aria-label="ATHAR الرئيسية"><span class="brand-ar">أثر</span><span class="brand-en">A T H A R</span></a>
+    <nav id="navLinks"><a class="active" href="#home">الرئيسية</a><a href="#categories">المجموعات</a><a href="#products">تسوق</a><a href="#story">قصتنا</a></nav>
+    <div class="nav-actions"><button class="icon-button search-button" id="searchButton" aria-label="بحث">⌕</button><button class="icon-button cart-open" id="openCart" aria-label="سلة التسوق">🛒<span id="cartCount">0</span></button><button class="icon-button desktop-menu" id="desktopMenu" aria-label="القائمة">☰</button></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-index"><span>01</span><i></i><span>03</span></div>
+    <p class="hero-kicker">WEAR YOUR IMPACT</p>
+    <p class="eyebrow">ATHAR / THE NEW COLLECTION</p>
+    <h1>أكتر من<br>مجرد ملابس<span>.</span></h1>
+    <p class="hero-description">تصاميم بسيطة .. تفاصيل محسوبة .. هوية تفضل حاضرة.</p>
+    <a class="hero-cta" href="#products"><span>تسوّق الآن</span><b>←</b></a>
+  </div>
+  <div class="hero-signature"><span class="signature-ar">أثر</span><span>A T H A R</span></div>
+  <div class="hero-caption">01 — MADE TO LEAVE A MARK</div>
+</header>
+
+<main>
+  <section class="categories" id="categories">
+    <a class="category-card" href="#products" data-category-link="men"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=85" alt="ملابس رجالي"><span class="category-copy"><strong>رجالي</strong><small>MEN</small><b>→</b></span></a>
+    <a class="category-card" href="#products" data-category-link="women"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="ملابس نسائي"><span class="category-copy"><strong>نسائي</strong><small>WOMEN</small><b>→</b></span></a>
+    <a class="category-card" href="#products" data-category-link="unisex"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="ملابس يونيسكس"><span class="category-copy"><strong>يونيسكس</strong><small>UNISEX</small><b>→</b></span></a>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="products-top"><div><p class="section-kicker">NEW ARRIVALS</p><h2>أحدث القطع</h2></div><div class="filters" role="group" aria-label="تصفية المنتجات"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="men">رجالي</button><button class="filter" data-filter="women">نسائي</button><button class="filter" data-filter="unisex">يونيسكس</button></div></div>
+    <div class="product-grid" id="productGrid">
+      <article class="product" data-category="men" data-id="tee-black" data-name="تيشيرت أثر أسود" data-price="650" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85">
+        <div class="product-photo"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="تيشيرت أسود" loading="lazy"><button class="favorite" aria-label="إضافة للمفضلة">♡</button><button class="add-cart">أضف للسلة <span>＋</span></button></div><div class="product-meta"><div><h3>تيشيرت أثر</h3><p>أسود · قطن يومي</p></div><strong>650 <small>EGP</small></strong><button class="round-cart add-cart-icon" aria-label="أضف للسلة">🛒</button></div>
+      </article>
+      <article class="product" data-category="unisex" data-id="hoodie-cream" data-name="هودي كلاسيك" data-price="1050" data-image="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=85">
+        <div class="product-photo"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="هودي أوف وايت" loading="lazy"><button class="favorite" aria-label="إضافة للمفضلة">♡</button><button class="add-cart">أضف للسلة <span>＋</span></button></div><div class="product-meta"><div><h3>هودي كلاسيك</h3><p>أوف وايت · قصة مريحة</p></div><strong>1,050 <small>EGP</small></strong><button class="round-cart add-cart-icon" aria-label="أضف للسلة">🛒</button></div>
+      </article>
+      <article class="product" data-category="men" data-id="pants-black" data-name="بنطال مريح" data-price="950" data-image="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=700&q=85">
+        <div class="product-photo"><img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85" alt="بنطال أسود" loading="lazy"><button class="favorite" aria-label="إضافة للمفضلة">♡</button><button class="add-cart">أضف للسلة <span>＋</span></button></div><div class="product-meta"><div><h3>بنطال مريح</h3><p>أسود · قصة مستقيمة</p></div><strong>950 <small>EGP</small></strong><button class="round-cart add-cart-icon" aria-label="أضف للسلة">🛒</button></div>
+      </article>
+      <article class="product" data-category="unisex" data-id="tee-olive" data-name="تيشيرت بسيط" data-price="600" data-image="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=85">
+        <div class="product-photo"><img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=85" alt="تيشيرت رمادي" loading="lazy"><button class="favorite" aria-label="إضافة للمفضلة">♡</button><button class="add-cart">أضف للسلة <span>＋</span></button></div><div class="product-meta"><div><h3>تيشيرت بسيط</h3><p>رمادي · Unisex</p></div><strong>600 <small>EGP</small></strong><button class="round-cart add-cart-icon" aria-label="أضف للسلة">🛒</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-photo story-photo-one"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85" alt="تفاصيل من ATHAR" loading="lazy"><span>MADE WITH INTENTION</span></div>
+    <div class="story-copy"><p class="section-kicker">OUR STORY</p><h2>قصتنا</h2><p>أثر وُجدت من فكرة بسيطة.. إن اللبس مش بس ما نرتديه، بل ما نتركه من انطباع. نؤمن بأن التفاصيل تصنع الفرق، وأن كل قطعة يمكن أن تكون بداية لحكاية جديدة.</p><a href="#newsletter" class="outline-button">اعرف المزيد <span>←</span></a></div>
+    <div class="story-photo story-photo-two"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85" alt="خامة قماش" loading="lazy"><span>THE DETAILS MATTER</span></div>
+  </section>
+
+  <section class="community" id="newsletter"><div class="community-text"><p class="section-kicker">JOIN OUR COMMUNITY</p><h2>كن جزءًا من رحلتنا</h2><p>تعرّف على أحدث الإصدارات والعروض أولًا.</p></div><form id="newsletterForm"><input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني" required><button type="submit" aria-label="اشتراك">←</button></form></section>
+</main>
+<footer><div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-ar">أثر</span><span class="brand-en">A T H A R</span></a><nav><a href="#home">الرئيسية</a><a href="#categories">المجموعات</a><a href="#products">تسوّق</a><a href="#story">قصتنا</a><a href="#" id="contactLink">تواصل معنا</a></nav><div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="TikTok">♪</a></div></div><div class="footer-bottom"><span>© 2026 ATHAR. جميع الحقوق محفوظة.</span><span>WEAR YOUR IMPACT.</span></div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="cart-head"><h2>سلة التسوق <span id="cartTitleCount">(0)</span></h2><button id="closeCart" aria-label="إغلاق">×</button></div><div class="cart-items" id="cartItems"><p class="empty-cart">سلتك فارغة حاليًا.</p></div><div class="cart-bottom"><div><span>المجموع</span><strong id="cartSubtotal">0 EGP</strong></div><button class="checkout" id="checkoutBtn">إتمام الطلب <span>←</span></button><button class="continue" id="continueShopping">متابعة التسوق</button><small>تأكيد الطلب يتم عبر واتساب.</small></div></aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>
